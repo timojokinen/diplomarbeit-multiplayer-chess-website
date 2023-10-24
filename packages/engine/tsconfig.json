@@ -1,0 +1,5 @@
+{
+  "extends": "ks-tsconfig/lib.json",
+  "include": ["src/**/*.ts", "src/**/*.json"],
+  "exclude": ["**/*.test.ts", "**/*.spec.ts", "dist"]
+}

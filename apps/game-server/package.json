@@ -1,0 +1,26 @@
+{
+  "name": "ks-game-server",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "start": "tsx ./src/server.ts"
+  },
+  "dependencies": {
+    "@colyseus/command": "^0.2.1",
+    "@colyseus/playground": "^0.15.4",
+    "@colyseus/schema": "^2.0.14",
+    "@fastify/express": "^2.3.0",
+    "colyseus": "^0.15.7",
+    "fastify": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "ks-database": "*",
+    "ks-engine": "*"
+  },
+  "devDependencies": {
+    "@colyseus/loadtest": "^0.15.2",
+    "@types/jsonwebtoken": "^9.0.2"
+  }
+}

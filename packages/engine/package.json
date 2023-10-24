@@ -1,0 +1,21 @@
+{
+  "name": "ks-engine",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "test": "jest",
+    "cli-game": "tsx ./src/cli-game.ts",
+    "benchmarks": "tsx ./src/benchmark.ts",
+    "format-games": "tsx ./src/format-games.ts",
+    "generate-magic-numbers": "tsx ./src/scripts/generate-magic-numbers.ts",
+    "generate-zobrist-keys": "tsx ./src/scripts/generate-zobrist-keys.ts"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "jest": "^29.6.2",
+    "ks-tsconfig": "*",
+    "ts-jest": "^29.1.1"
+  }
+}

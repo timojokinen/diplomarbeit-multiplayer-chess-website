@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "predev": "turbo prisma:generate",
+    "prebuild": "turbo prisma:generate",
+    "prisma:migrate": "npm run prisma:migrate -w packages/database",
+    "prisma:generate": "turbo prisma:generate",
+    "start": "turbo run start",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "cli-game": "npm run cli-game -w packages/engine",
+    "benchmarks": "npm run benchmarks -w packages/engine",
+    "format-games": "npm run format-games -w packages/engine",
+    "generate-magic-numbers": "turbo run generate-magic-numbers",
+    "generate-zobrist-keys": "turbo run generate-zobrist-keys"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.9.7",
+    "eslint": "^8.47.0",
+    "ks-tsconfig": "*",
+    "prettier": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "tsx": "^3.12.7",
+    "turbo": "^1.10.13",
+    "typescript": "^5.1.6"
+  },
+  "name": "knight-shift-app",
+  "packageManager": "npm@9.7.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

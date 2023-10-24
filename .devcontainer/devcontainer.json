@@ -1,0 +1,40 @@
+{
+  "name": "knight-shift",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "application",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "mikestead.dotenv",
+        "ms-azuretools.vscode-docker",
+        "wayou.vscode-todo-highlight",
+        "prisma.prisma",
+        "bradlc.vscode-tailwindcss"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+
+  "forwardPorts": [3000, 8080, 6379],
+  "postCreateCommand": "bash -i .devcontainer/init.sh",
+  "remoteUser": "node",
+  "portsAttributes": {
+    "3000": {
+      "label": "Frontend"
+    },
+    "5432": {
+      "label": "Postgres"
+    },
+    "8080": {
+      "label": "Game Server"
+    },
+    "6379": {
+      "label": "Redis"
+    }
+  }
+}

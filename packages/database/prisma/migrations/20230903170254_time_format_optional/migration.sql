@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Game" ALTER COLUMN "baseTime" DROP NOT NULL,
+ALTER COLUMN "increment" DROP NOT NULL;

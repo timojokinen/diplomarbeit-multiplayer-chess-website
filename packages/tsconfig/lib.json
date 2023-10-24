@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Library",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "outDir": "dist",
+    "declaration": false,
+    "declarationMap": false,
+    "incremental": true,
+    "lib": ["esnext"],
+    "module": "esnext",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "target": "es2020"
+  }
+}

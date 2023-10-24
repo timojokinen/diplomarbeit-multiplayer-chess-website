@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Server",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "outDir": "dist",
+    "declaration": false,
+    "declarationMap": false,
+    "incremental": true,
+    "lib": ["esnext"],
+    "module": "esnext",
+    "useDefineForClassFields": false,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "target": "ESNext"
+  }
+}
